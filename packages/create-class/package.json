@@ -2,7 +2,7 @@
   "name": "@opensky/create-class",
   "author": "notnotjake",
   "description": "Helps to set classes programatically",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "repository": {
     "directory": "packages/create-class",
     "type": "git",
@@ -27,7 +27,7 @@
     }
   },
   "scripts": {
-    "build": "bun build ./index.ts --outdir ./dist --format esm --target node && bun build ./index.ts --outdir ./dist --format cjs --outfile ./dist/index.js && tsc --declaration --emitDeclarationOnly --outDir dist",
+    "build": "bun build ./index.ts --outfile ./dist/index.mjs --format esm --target node && bun build ./index.ts --outfile ./dist/index.js --format cjs --target node && tsc --project tsconfig.build.json",
     "prepublishOnly": "bun run build"
   },
   "dependencies": {
