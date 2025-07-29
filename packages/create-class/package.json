@@ -1,0 +1,28 @@
+{
+  "name": "@opensky/create-class",
+  "author": "notnotjake".
+  "description": "Helps to set classes programatically",
+  "version": "1.0.0",
+  "repository": {
+    "directory": "packages/create-class",
+    "type": "git",
+    "url": "https://github.com/open-sky-dev/opensky-create-class.git"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "module": "index.ts",
+  "type": "module",
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "tailwind-merge": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5",
+    "tailwindcss": "^4.1.11"
+  }
+}
