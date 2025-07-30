@@ -85,6 +85,8 @@ Creates a powerful variant system for components with support for base styles, v
 const buttonVariants = {
   base: 'px-4 py-2 font-medium rounded',
   reset: 'p-0 bg-transparent border-0',
+  
+  // Multi-option variants
   size: {
     sm: 'text-sm',
     md: 'text-base',
@@ -96,6 +98,12 @@ const buttonVariants = {
     secondary: 'bg-gray-200 text-gray-800',
     danger: 'bg-red-500 text-white'
   },
+  
+  // Boolean toggle variants (string values)
+  disabled: 'opacity-50 cursor-not-allowed',
+  elevated: 'shadow-lg',
+  
+  // Compound variants
   compound: [
     {
       size: 'lg',
@@ -127,6 +135,21 @@ const customResult = createVariants(buttonVariants, { variant: 'custom-gradient'
 //   classes: 'px-4 py-2 font-medium rounded text-base custom-gradient',
 //   size: 'md', // default value
 //   variant: 'custom-gradient'
+// }
+
+// Using boolean toggles
+const toggleResult = createVariants(buttonVariants, { 
+  size: 'sm', 
+  variant: 'primary', 
+  disabled: true, 
+  elevated: true 
+})
+// Returns: {
+//   classes: 'px-4 py-2 font-medium rounded text-sm bg-blue-500 text-white opacity-50 cursor-not-allowed shadow-lg',
+//   size: 'sm',
+//   variant: 'primary',
+//   disabled: true,
+//   elevated: true
 // }
 ```
 
