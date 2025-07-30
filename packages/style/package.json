@@ -1,12 +1,12 @@
 {
-  "name": "@opensky/create-class",
+  "name": "@opensky/style",
   "author": "notnotjake",
-  "description": "Helps to set classes programatically",
-  "version": "0.0.2",
+  "description": "Utilities for styling in svelte",
+  "version": "0.1.0",
   "repository": {
-    "directory": "packages/create-class",
+    "directory": "packages/style",
     "type": "git",
-    "url": "https://github.com/open-sky-dev/opensky-create-class.git"
+    "url": "https://github.com/open-sky-dev/opensky-style.git"
   },
   "license": "MIT",
   "publishConfig": {
